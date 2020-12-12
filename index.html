@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Generics | Store</title>
+  <meta name="description" content="This is the description">
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" async ></script>
+</head>
+<body>
+<header class="main-header">
+  <h1>Family Pizza</h1>
+</header>
+<section class="container content-section">
+  <h2 class="section-header">PIZZA</h2>
+  <div class="shop-items">
+    <div class="shop-item">
+      <span class="shop-item-title">Napoletana</span>
+      <img class="shop-item-image" src="img/pizza1.png">
+      <div class="shop-item-details">
+        <span class="shop-item-price">$17.99</span>
+        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+      </div>
+    </div>
+    <div class="shop-item">
+      <span class="shop-item-title">Diavola</span>
+      <img class="shop-item-image" src="img/pizza2.png">
+      <div class="shop-item-details">
+        <span class="shop-item-price">$18.99</span>
+        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+      </div>
+    </div>
+    <div class="shop-item">
+      <span class="shop-item-title">Pepperoni</span>
+      <img class="shop-item-image" src="img/pizza3.png">
+      <div class="shop-item-details">
+        <span class="shop-item-price">$19.99</span>
+        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+      </div>
+    </div>
+    <div class="shop-item">
+      <span class="shop-item-title">Cheese</span>
+      <img class="shop-item-image" src="img/pizza4.png">
+      <div class="shop-item-details">
+        <span class="shop-item-price">$20.99</span>
+        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+      </div>
+    </div>
+    <div class="shop-item">
+      <span class="shop-item-title">Hawai</span>
+      <img class="shop-item-image" src="img/pizza5.png">
+      <div class="shop-item-details">
+        <span class="shop-item-price">$21.99</span>
+        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+      </div>
+    </div>
+    <div class="shop-item">
+      <span class="shop-item-title">Vegeterian</span>
+      <img class="shop-item-image" src="img/pizza6.png">
+      <div class="shop-item-details">
+        <span class="shop-item-price">$22.99</span>
+        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container content-section">
+  <h2 class="section-header">CART</h2>
+  <div class="cart-row">
+    <span class="cart-item cart-header cart-column">PIZZA</span>
+    <span class="cart-toppings cart-header cart-column">ADD TOPPINGS</span>
+    <span class="cart-size cart-header cart-column">SIZE</span>
+    <span class="cart-price cart-header cart-column">PRICE OF PIZZA</span>
+    <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+  </div>
+  <div class="cart-items">
+    <!-- cards are added dynamically -->
+  </div>
+  <div class="cart-total">
+    <strong class="cart-order-title">Order</strong>
+    <span class="cart-order-price">$0</span>
+    <strong class="cart-taxes-title">Sales tax(+10%)</strong>
+    <span class="cart-taxes-price">$0</span>
+    <strong class="cart-total-title">Total</strong>
+    <span class="cart-total-price">$0</span>
+  </div>
+</section>
+
+<section class="container content-section">
+  <form id="form" action="" method="">
+    <div class="form-wrapper">
+      <div class="form-container">
+        <div class="form-container-block">
+          <label for="fname" class="form-container-title">* Enter your name: </label><br>
+          <input id="fname" class="form-input form-container-block-name" type="text" id="fname" name="fname" placeholder="Enter your name..." maxlength="35" required><br>
+          <output id="fname-prompt"></output><br>
+        </div>
+        <div class="form-container-block">
+          <label for="address" class="form-container-title">* Enter your address: </label><br>
+          <input id="address" class="form-input form-container-block-address" type="text" id="address" name="address" placeholder="Enter your address..."  maxlength="35" required><br>
+          <output id="address-prompt"></output><br>
+        </div>
+        <div class="form-container-block">
+          <label for="phoneNumber" class="form-container-title">* Phone number:</label><br>
+          <input id="phoneNumber" class="form-input form-container-block-phone" type="text" id="phoneNumber" name="phoneNumber" placeholder="1234567890" pattern="[0-9]{10}"  maxlength="10" required><br>
+          <output id="phoneNumber-prompt"></output><br>
+        </div>
+      </div>
+      <div class="form-container-block">
+        <div class="form-container-title">Add comments:</div><br>
+        <textarea id="comment" class="form-input form-container-block-comment" placeholder="Add comments..." maxlength="150"></textarea>
+        <output id="comment-prompt"></output><br>
+      </div>
+    </div>
+    <button id="post" class="btn btn-primary btn-order" type="text" onclick="createOrder()">ORDER PIZZA</button>
+</form><br>
+  
+</section>
+<h2>URL</h2>
+<pre id="url"></pre>
+
+<h2>Data</h2>
+<pre id="data"></pre>
+
+<h2>Response:</h2>
+<pre id="response"></pre>
+
+<footer class="footer">
+  2020
+</footer>
+
+</body>
+</html>
